@@ -3,11 +3,18 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.css'
+// import colors from 'vuetify/es5/util/colors'
 import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  // theme: {
+  //   primary: colors.red.darken1,
+  //   secondary: colors.red.lighten4,
+  //   accent: colors.indigo.base
+  // }
+})
 
 /* eslint-disable no-new */
 new Vue({

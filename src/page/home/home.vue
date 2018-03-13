@@ -1,28 +1,24 @@
 <template>
-  <v-app dark>
+  <v-app lighten>
     <v-content>
       <v-container>
-        <v-layout row wrap align-center>
+        <v-layout row wrap align-baseline>
           <v-flex xs12 md4>
             <div class="text-xs-center">
               <v-avatar size="125px">
                 <img
                   class="img-circle elevation-7 mb-1"
-                  src="https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/lists/2.jpg"
+                  src="../../assets/avatar.jpeg"
                 >
               </v-avatar>
-              <div class="headline">John <span style="font-weight:bold">Carter</span></div>
-              <div class="subheading text-xs-center grey--text pt-1 pb-3">Lorem ipsum dolor sit amet</div>
+              <div class="headline">Dawn <span style="font-weight:bold">Lee</span></div>
+              <div class="subheading text-xs-center grey--text pt-1 pb-3">web/node.js/python</div>
               <v-layout justify-space-between>
                 <a href="javascript:;" class="body-2">Home</a>
                 <a href="javascript:;" class="body-2">About</a>
                 <a href="javascript:;" class="body-2">Github</a>
                 <a href="javascript:;" class="body-2">Other</a>
               </v-layout>
-              <div>
-                <v-checkbox label="Landscape" v-model="landscape"></v-checkbox>
-                <v-time-picker class="primary" v-model="picker" :landscape="landscape"></v-time-picker>
-              </div>
             </div>
           </v-flex>
           <v-flex xs12 md5 offset-md2>
@@ -63,15 +59,11 @@
         </v-layout>
       </v-container>
     </v-content>
-    <v-footer class="secondary" app>
+    <v-footer class="secondary">
       <v-layout row wrap align-center>
-        <v-flex xs12>
-          <div class="white--text ml-3">
-            Made with
-            <v-icon>favorite</v-icon>
-            <v-btn >dddddd</v-btn>
-            by <a href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-            and <a class="white--text" href="https://github.com/vwxyzjn" target="_blank">Costa Huang</a>
+        <v-flex xs12 justify-center>
+          <div class="white--text text-xs-center">
+            Copyright @2018 Daoenli.com.All Rights Reserved.
           </div>
         </v-flex>
       </v-layout>
@@ -89,9 +81,9 @@ export default {
       title: 'Your Logo',
       posts: [
         {
-          title: 'Fusce ullamcorper tellus',
-          content: 'Fusce ullamcorper tellus sed maximus rutrum. Donec imperdiet ultrices maximus. Donec non tellus non neque pellentesque fermentum. Aenean in pellentesque urna.',
-          imgUrl: 'https://raw.githubusercontent.com/vuetifyjs/docs/dev/static/doc-images/cards/drop.jpg'
+          title: 'angular指令理解',
+          content: '理解angular指令编译过程，深入了解模版解析，scope作用域划分',
+          imgUrl: '/static/img/angular.jpg'
         },
         {
           title: 'Donec vitae suscipit lectus, a luctus diam.',
