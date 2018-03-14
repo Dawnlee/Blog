@@ -12,7 +12,7 @@
                 >
               </v-avatar>
               <div class="headline">Dawn <span style="font-weight:bold">Lee</span></div>
-              <div class="subheading text-xs-center grey--text pt-1 pb-3">web/node.js/python</div>
+              <div class="subheading text-xs-center grey--text pt-1 pb-3">javascript/python/java</div>
               <v-layout justify-space-between>
                 <a href="javascript:;" class="body-2">Home</a>
                 <a href="javascript:;" class="body-2">About</a>
@@ -27,9 +27,8 @@
                 <v-card-media
                   class="white--text"
                   height="170px"
-                  :src="post.imgUrl"
                 >
-                  <v-container fill-height fluid>
+                  <v-container fill-height fluid class="po-img">
                     <v-layout>
                       <v-flex xs12 align-end d-flex>
                         <span class="headline">{{ post.title }}</span>
